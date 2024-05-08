@@ -46,16 +46,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-          theme: {
-          customCss: './src/css/custom.css',
-        },
+        blog: false,
       }),
     ],
   ],
@@ -74,16 +65,22 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'lehrplanSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Lehrplan',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            type: 'docSidebar',
+            sidebarId: 'lehrstoffSidebar',
+            position: 'left',
+            label: 'Lehrstoff',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'laboreSidebar',
+            position: 'left',
+            label: 'Labore',
+          }
         ],
       },
       footer: {
@@ -93,7 +90,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'LbsFe1',
                 to: '/docs/intro',
               },
             ],
