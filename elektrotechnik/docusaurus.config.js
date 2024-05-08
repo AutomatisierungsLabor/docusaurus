@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Die Elektrotechniker',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -87,11 +87,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Homepage',
             items: [
               {
                 label: 'LbsFe1',
-                to: '/docs/intro',
+                href: 'https://lbsfe1.snv.at/startseite/',
               },
             ],
           },
@@ -115,10 +115,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
